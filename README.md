@@ -68,7 +68,7 @@
 
 Запустите скрипт с правами администратора:
 ```bash
-python improved_main_2.py
+python keylloger.py
 ```
 
 Убедитесь, что все зависимости Python установлены.
