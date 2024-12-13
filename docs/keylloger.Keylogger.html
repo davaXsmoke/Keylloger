@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>keylloger.Keylogger</title>
+    <meta name="generator" content="pydoctor 24.11.0"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          keylloger <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Class</span>
+        <code class="thisobject"><a href="keylloger.Keylogger.html" class="internal-link" title="This class"><wbr></wbr>Keylogger</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        
+        
+
+        <div class="childrenKindTitle">Methods</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#__init__" class="internal-link" title="keylloger.Keylogger.__init__">__init__</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#prepare_mail" class="internal-link" title="keylloger.Keylogger.prepare_mail">prepare<wbr></wbr>_mail</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#report" class="internal-link" title="keylloger.Keylogger.report">report</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#sendmail" class="internal-link" title="keylloger.Keylogger.sendmail">sendmail</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#start" class="internal-link" title="keylloger.Keylogger.start">start</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Attributes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#interval" class="internal-link" title="keylloger.Keylogger.interval">interval</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#report_method" class="internal-link" title="keylloger.Keylogger.report_method">report<wbr></wbr>_method</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div><div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code><a href="index.html" class="internal-link" title="The parent of this class">keylloger</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class=" thisobject">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="keylloger.Keylogger.html" class="internal-link" title="keylloger.Keylogger"><wbr></wbr>Keylogger</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#convert_to_english" class="internal-link" title="keylloger.convert_to_english">convert<wbr></wbr>_to<wbr></wbr>_english</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#convert_to_russian" class="internal-link" title="keylloger.convert_to_russian">convert<wbr></wbr>_to<wbr></wbr>_russian</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#get_active_window" class="internal-link" title="keylloger.get_active_window">get<wbr></wbr>_active<wbr></wbr>_window</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#get_current_layout" class="internal-link" title="keylloger.get_current_layout">get<wbr></wbr>_current<wbr></wbr>_layout</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#install_and_import" class="internal-link" title="keylloger.install_and_import">install<wbr></wbr>_and<wbr></wbr>_import</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#is_email_or_username_or_phone" class="internal-link" title="keylloger.is_email_or_username_or_phone">is<wbr></wbr>_email<wbr></wbr>_or<wbr></wbr>_username<wbr></wbr>_or<wbr></wbr>_phone</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#is_phone_number" class="internal-link" title="keylloger.is_phone_number">is<wbr></wbr>_phone<wbr></wbr>_number</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#is_probable_password" class="internal-link" title="keylloger.is_probable_password">is<wbr></wbr>_probable<wbr></wbr>_password</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#on_press" class="internal-link" title="keylloger.on_press">on<wbr></wbr>_press</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#on_release" class="internal-link" title="keylloger.on_release">on<wbr></wbr>_release</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#process_inputs" class="internal-link" title="keylloger.process_inputs">process<wbr></wbr>_inputs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#setup_autostart_unix" class="internal-link" title="keylloger.setup_autostart_unix">setup<wbr></wbr>_autostart<wbr></wbr>_unix</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#setup_autostart_windows" class="internal-link" title="keylloger.setup_autostart_windows">setup<wbr></wbr>_autostart<wbr></wbr>_windows</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#unpack_to_macos_directory" class="internal-link" title="keylloger.unpack_to_macos_directory">unpack<wbr></wbr>_to<wbr></wbr>_macos<wbr></wbr>_directory</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#unpack_to_system32" class="internal-link" title="keylloger.unpack_to_system32">unpack<wbr></wbr>_to<wbr></wbr>_system32</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#EMAIL_ADDRESS" class="internal-link" title="keylloger.EMAIL_ADDRESS">EMAIL<wbr></wbr>_ADDRESS</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#EMAIL_PASSWORD" class="internal-link" title="keylloger.EMAIL_PASSWORD">EMAIL<wbr></wbr>_PASSWORD</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#SEND_REPORT_EVERY" class="internal-link" title="keylloger.SEND_REPORT_EVERY">SEND<wbr></wbr>_REPORT<wbr></wbr>_EVERY</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#collected_data" class="internal-link" title="keylloger.collected_data">collected<wbr></wbr>_data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#inputs" class="internal-link" title="keylloger.inputs">inputs</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#last_entry_type" class="internal-link" title="keylloger.last_entry_type">last<wbr></wbr>_entry<wbr></wbr>_type</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#pressed_keys" class="internal-link" title="keylloger.pressed_keys">pressed<wbr></wbr>_keys</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="index.html#required_packages" class="internal-link" title="keylloger.required_packages">required<wbr></wbr>_packages</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="class"><code><code><a href="index.html" class="internal-link">keylloger</a></code><wbr></wbr>.<code><a href="keylloger.Keylogger.html" class="internal-link" title="keylloger.Keylogger">Keylogger</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          class documentation
+        </div>
+
+        <div class="extrasDocstring">
+          <p class="class-signature"><code><span class="py-keyword">class</span> <span class="py-defname">Keylogger</span>:</code></p><p>Constructor: <code><a href="#__init__" class="internal-link" title="keylloger.Keylogger.__init__">Keylogger(interval, report_method)</a></code></p>
+          <p><a href="classIndex.html#keylloger.Keylogger">View In Hierarchy</a></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p>Класс Keylogger реализует функционал для записи нажатий клавиш, их обработки и отправки отчетов.</p>
+<p>Методы:
+- prepare_mail: подготавливает письмо для отправки с помощью SMTP.
+- sendmail: отправляет подготовленное письмо через указанный SMTP-сервер.
+- report: собирает данные, отправляет отчет и запускает следующий таймер.
+- start: запускает keylogger и обработчик событий клавиатуры.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">interval</span></td><td class="fieldArgDesc">интервал времени между отправкой отчетов (в секундах)</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">report<wbr></wbr>_method</span></td><td class="fieldArgDesc">метод отправки отчетов (по умолчанию "email")</td></tr></table></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id2">
+  
+  
+  <tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#__init__" class="internal-link" title="keylloger.Keylogger.__init__">__init__</a></code></td>
+    <td>Инициализация Keylogger.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#prepare_mail" class="internal-link" title="keylloger.Keylogger.prepare_mail">prepare<wbr></wbr>_mail</a></code></td>
+    <td>Формирует письмо для отправки с содержанием отчета.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#report" class="internal-link" title="keylloger.Keylogger.report">report</a></code></td>
+    <td>Формирует и отправляет отчет о нажатиях клавиш. Затем запускает новый таймер.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#sendmail" class="internal-link" title="keylloger.Keylogger.sendmail">sendmail</a></code></td>
+    <td>Отправляет письмо с отчетом через SMTP-сервер.</td>
+  </tr><tr class="method">
+    
+    <td>Method</td>
+    <td><code><a href="#start" class="internal-link" title="keylloger.Keylogger.start">start</a></code></td>
+    <td>Запускает keylogger и обработчик событий клавиатуры.</td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#interval" class="internal-link" title="keylloger.Keylogger.interval">interval</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr><tr class="instancevariable">
+    
+    <td>Instance Variable</td>
+    <td><code><a href="#report_method" class="internal-link" title="keylloger.Keylogger.report_method">report<wbr></wbr>_method</a></code></td>
+    <td><span class="undocumented">Undocumented</span></td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basemethod">
+  
+  
+  <a name="keylloger.Keylogger.__init__">
+    
+  </a>
+  <a name="__init__">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">__init__</span><span class="function-signature">(self, interval, report_method=<span class="rst-variable-quote">'</span><span class="rst-variable-string">email</span><span class="rst-variable-quote">'</span>)</span>:
+    
+    <a class="headerLink" href="#__init__" title="keylloger.Keylogger.__init__">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Инициализация Keylogger.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">interval:</span>int</td><td class="fieldArgDesc">интервал времени между отчетами</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">report<wbr></wbr>_method:</span>str</td><td class="fieldArgDesc">метод отправки отчетов (по умолчанию "email")</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="keylloger.Keylogger.prepare_mail">
+    
+  </a>
+  <a name="prepare_mail">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">prepare_mail</span><span class="function-signature">(self, message)</span>:
+    
+    <a class="headerLink" href="#prepare_mail" title="keylloger.Keylogger.prepare_mail">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Формирует письмо для отправки с содержанием отчета.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span>str</td><td class="fieldArgDesc">текст сообщения</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">str</td><td class="fieldArgDesc">подготовленное письмо в виде строки</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="keylloger.Keylogger.report">
+    
+  </a>
+  <a name="report">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">report</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#report" title="keylloger.Keylogger.report">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Формирует и отправляет отчет о нажатиях клавиш. Затем запускает новый таймер.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>если происходит ошибка во время формирования или отправки отчета</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="keylloger.Keylogger.sendmail">
+    
+  </a>
+  <a name="sendmail">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">sendmail</span><span class="function-signature">(self, email, password, message)</span>:
+    
+    <a class="headerLink" href="#sendmail" title="keylloger.Keylogger.sendmail">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Отправляет письмо с отчетом через SMTP-сервер.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">email:</span>str</td><td class="fieldArgDesc">адрес электронной почты отправителя</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">password:</span>str</td><td class="fieldArgDesc">пароль от учетной записи отправителя</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">message:</span>str</td><td class="fieldArgDesc">текст сообщения для отправки</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>Exception</code></td><td>если происходит ошибка при отправке письма</td></tr></table></div>
+  </div>
+</div><div class="basemethod">
+  
+  
+  <a name="keylloger.Keylogger.start">
+    
+  </a>
+  <a name="start">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">start</span><span class="function-signature">(self)</span>:
+    
+    <a class="headerLink" href="#start" title="keylloger.Keylogger.start">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Запускает keylogger и обработчик событий клавиатуры.</p>
+<p>Обрабатывает нажатия и отпускания клавиш, а также отправляет отчеты с указанным интервалом времени.</p>
+</div>
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="keylloger.Keylogger.interval">
+    
+  </a>
+  <a name="interval">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">interval</span>: int =
+    
+    <a class="headerLink" href="#interval" title="keylloger.Keylogger.interval">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div><div class="baseinstancevariable">
+  
+  
+  <a name="keylloger.Keylogger.report_method">
+    
+  </a>
+  <a name="report_method">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">report_method</span>: str =
+    
+    <a class="headerLink" href="#report_method" title="keylloger.Keylogger.report_method">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p class="undocumented">Undocumented</p></div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for keylloger,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.0 at 2024-12-13 19:02:46.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
